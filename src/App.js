@@ -1,9 +1,12 @@
-import React from 'react'
-
-const App = () => {
+import './App.css';
+import Header from"./Componet/Header";
+import Home from "./Componet/Home";
+function App() {
   return (
-    <div>App</div>
-  )
+    <div>
+      hello
+    </div>
+    
+  );
 }
-
-export default App
+export default App;
