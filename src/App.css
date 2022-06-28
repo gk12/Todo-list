@@ -1,38 +1,89 @@
-.App {
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Roboto', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700;1,900&display=swap');
+nav {
+  background-color: rgb(19, 26, 136);
+  color: rgb(92, 255, 0);
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
   }
-}
+  .header{
+    background-color:white ;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  .header > a {
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+  }
+  .container
+  {
+    background-color: rgb(45, 207, 131);
+    width: 70%;
+    margin: auto;
+    min-height: 100vh;
+    padding: 3vmax;
+    box-sizing: border-box;
+  }
+  
+  /*container ke under jo form hai*/
+   .container > form 
+   {
+    display: flex;
+    flex-direction: column;
+  }
+  input,textarea,button{
+    padding: 20px;
+    border: 10px solid rgba(0, 0, 0, 0.54);
+    border-radius: 8px;
+    margin: 12px;
+  }
+  button{
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color:white ;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  }
+  .container > h1{
+    text-align: center;
+    margin: 30px;
+  }
+  *{
+    border: 1px solid rgb(98, 240, 34);
+   }
+   /* task ka jo niche ban rha hai wo yahi hai */
+   .task
+  {
+    align-items: center;
+    display: flex;
+    background-color: #91fffa;
+    border: radius 5px;
+    padding: 22px;
+    margin: 10px;
+  }
+  /* wo task hoga wo esme hi show hoga */
+   .task span{
+    color: rgb(208, 23, 23);  }
+.task > div{
+  width: 100%;
+}
+.task button{
+ border-radius: 100%;
+ width: 30px;
+ height: 30px;
+ font-size: 1.6rem;
+ background-color: rgb(13, 35, 219);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ justify-content: center;
+ align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task button:hover{
+background-color: red;
 }
