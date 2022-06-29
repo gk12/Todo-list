@@ -107,6 +107,7 @@ button:hover{
     height: 100vh;
   }
 
-  .footer{
-    
+  footer{
+ background-color: black;
+ height: 300px;
   }
