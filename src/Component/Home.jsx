@@ -2,6 +2,8 @@ import React,{useEffect, useState } from 'react';
 import Task from './Task';
 
 const Home = () => {
+  const initialArray=localStorage.getItem("tasks")?JSON.parse(localStorage.getItem("tasks")):[];
+  const [tasks,setTasks] = useState(initialArray);
 
     const [title,setTitle] = useState("");
     const [description,setDescription]=useState("");
